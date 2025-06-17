@@ -12,3 +12,22 @@ Start the container (run whenever you want a dev shell):
 
 `./docker/scripts/start.sh`
 
+### Git Versioning and the MadScienceLabDocker Submodule
+
+The docker/MadScienceLabDocker folder is itself a separate Git repository. To properly version your project while including this external repo, use a Git submodule:
+
+1. To add the submodule (if not done already):
+
+`git submodule add https://github.com/throwtheswitch/MadScienceLabDocker.git docker/MadScienceLabDocker`
+
+2. Commit the change:
+
+`git commit -m "Add MadScienceLabDocker as a git submodule"`
+
+3. When cloning your repository later, initialize and update submodules with:
+
+`git submodule update --init --recursive`
+
+Using a Git submodule keeps the MadScienceLabDocker repo tracked separately and makes it easier to pull upstream changes when needed.
+
+
