@@ -1,0 +1,3 @@
+[submodule "docker/MadScienceLabDocker"]
+	path = docker/MadScienceLabDocker
+	url = https://github.com/throwtheswitch/MadScienceLabDocker.git

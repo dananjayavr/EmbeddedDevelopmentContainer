@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo ""
+echo -e "\e[35mWelcome to the Ceedling container $CONTAINER_VERSION \e[0m"
+echo -e "\e[37m"
+echo "  This container includes:"
+
+# Print features only if CONTAINER_PLATFORM is set
+if [[ -n "$CONTAINER_PLATFORM" ]]; then
+  echo "   * Ceedling, Unity, CMock & CException"
+  echo "   * Ruby 3"
+  echo "   * Essential Unix utilities"
+  echo "   * Essential build tools (make, etc.)"
+  echo "   * nano for simple text editing"
+  echo "   * The GNU Compiler Collection (gcc, etc.)"
+  echo "   * Standard C libraries"
+  echo "   * The GNU Debugger (gdb) for Ceedling's backtrace feature"
+fi
+
+# Platform-specific message
+if [[ "$CONTAINER_PLATFORM" == "linux/amd64" ]]; then
+  echo "   * GCC Multilib support for platform architectures"
+fi
+
+echo -e "\e[0m"
+echo "  To get started, enter \`ceedling help\` at the command line..."
+echo -e "\e[0m"
