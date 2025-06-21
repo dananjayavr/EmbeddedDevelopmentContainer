@@ -27,6 +27,8 @@ RUN set -ex \
      subversion \
      unzip \
      valgrind \
+     ninja-build \
+     udev \
      --no-install-recommends \
   && apt autoremove \
   && apt clean \

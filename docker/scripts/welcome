@@ -25,3 +25,7 @@ fi
 echo -e "\e[0m"
 echo "  To get started, enter \`ceedling help\` at the command line..."
 echo -e "\e[0m"
+
+echo -e "\e[0m"
+echo "  To create a project, enter \`workspace\` directory first."
+echo -e "\e[0m"
