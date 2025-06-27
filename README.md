@@ -31,3 +31,10 @@ The docker/MadScienceLabDocker folder is itself a separate Git repository. To pr
 Using a Git submodule keeps the MadScienceLabDocker repo tracked separately and makes it easier to pull upstream changes when needed.
 
 
+## Running `gcov`
+
+- Make sure gcov plugin is enabled in project.yml 
+- Running `ceedling gcov:all` will display simple coverage statistics
+- build/artifacts/gcov/gcovr/ will contain coverage results in HTML format
+
+- More info : https://github.com/ThrowTheSwitch/Ceedling/blob/master/plugins/gcov/README.md
