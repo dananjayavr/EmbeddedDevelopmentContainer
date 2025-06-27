@@ -29,6 +29,7 @@ RUN set -ex \
      valgrind \
      ninja-build \
      udev \
+     cmake \
      --no-install-recommends \
   && apt autoremove \
   && apt clean \
